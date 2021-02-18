@@ -41,10 +41,10 @@ public class Flocker : Kinematic
         blendedSteering.behaviors = new WeightedBehavior[3];
         blendedSteering.behaviors[0] = new WeightedBehavior();
         blendedSteering.behaviors[0].behavior = separation;
-        blendedSteering.behaviors[0].weight = 1f; //3
+        blendedSteering.behaviors[0].weight = 1f;
         blendedSteering.behaviors[1] = new WeightedBehavior();
         blendedSteering.behaviors[1].behavior = cohere;
-        blendedSteering.behaviors[1].weight = 1f; //.5
+        blendedSteering.behaviors[1].weight = 1f;
         blendedSteering.behaviors[2] = new WeightedBehavior();
         blendedSteering.behaviors[2].behavior = myRotateType;
         blendedSteering.behaviors[2].weight = 1f;
